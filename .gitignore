@@ -1,3 +1,7 @@
 .trash/*
 .DS_store
 source/content/.obsidian/workspace.json
+source/node_modules
+source/public
+*.mjs
+*.mjs.map
