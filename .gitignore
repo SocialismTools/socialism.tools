@@ -1,1 +1,3 @@
 .trash/*
+.DS_store
+source/content/.obsidian/workspace.json
