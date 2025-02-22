@@ -6,4 +6,3 @@ Some old articles have been deleted as they were out of date, and not very helpf
 
 Built with [Quartz](https://quartz.jzhao.xyz/
 ) and Obsidian. Forked from [this template](https://github.com/DefenderOfBasic/obsidian-quartz-template).
-
