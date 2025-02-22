@@ -3,8 +3,7 @@
 .vscode
 source/node_modules
 source/public
-*.mjs
-*.mjs.map
+source/quartz/.quartz-cache
 source/package-lock.json
 source/content/.obsidian/plugins
 source/content/.obsidian/community-plugins.json
