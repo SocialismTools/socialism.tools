@@ -1,4 +1,4 @@
-Most DSA members are talking to their comrades on multiple apps. Few people love the status quo, and every few years it's someone's turn to say hey: why don't we try to fix this problem? There's lots of open source options, how hard could it be? Without spoiling the surprise answer at the end, just know this is the third complete rewrite of this post in six years.
+Most DSA members are talking to their comrades on multiple apps. Few people love the status quo, and every few years it's someone's turn to say hey: why don't we try to fix this problem? There's lots of open source options! How hard could it be, anyway? Without spoiling the surprise answer at the end, just know this is the third complete rewrite of this post in six years.
 
 ## State of the chat
 There are dozens of chat apps to choose from for team collaboration. They’re all difficult to test out before fully committing, and like to spread critical features across price levels. DSA is in a weird sport for most companies because we have enterprise-level needs (self hosting, SSO, admin tools, advanced features) with ~none of the budget.
@@ -18,5 +18,19 @@ And finally, the biggest problem of all: DSA has members from a wide array of ba
 
 Chat apps aren't complicated like learning to use CAD software is complicated, but social interaction mediated by technology is never as simple as it sounds. Even major chat apps run by billion-dollar companies face usability issues, like notifications not showing up when they should, too many undesired notifications, and chats the user wants to access being lost in a sea of other chats. This is before you even think about more complicated use cases for organizers, like how to onboard new members, keep relevant information up to date, legal/privacy concerns, and so on.
 
-# Chat options
-This chart only includes features you can get for free, or in the case of self-hosted applications, after self-hosting the app.
+The old versions of this post had detailed comparisons of the apps, but this is very hard to keep up to date. Thankfully, it can be summarized easily:
+
+## two OK options for DSA, and the bad one
+Zulip and Matrix are the two best FOSS chat apps for us. They have decent feature sets, with Zulip being more mature but unique (In, Zulip, threads are first-class citizens - almost like a stream of very short emails)., and Matrix being more secure and a better fit for how our org is structured (private by design, distributed, cross-server chat as a core goal) but still very buggy and difficult to run (complex, bare-bones mod tools, encrypted by default means messages can be easily lost forever).
+
+Rocket Chat and Mattermost are often cited in these discussions but both lock too many paid features behind a paywall. 
+
+Consumer-oriented apps like Signal aren't built for the needs of large groups. The one consumer app built for the public - Discord.  Discord is very popular, especially with younger people and gamers. Some chapters have a Discord already set up. Discord is an app for public gaming communities and would be a pretty poor fit for DSA on features alone. The fact that it's owned by Microsoft (zero privacy) and undergoing increasingly aggressive monetization should rule it out for serious use. That said - until we choose one app to use and get people to use it, Discord is simple and popular - it's hard to beat that.
+
+## All of the non-tech parts
+
+There isn't one ideal app for DSA. I would be surprised if there was an org-wide push to move to one app simply because there is not one clearly obvious winner. This is a bigger problem than it might seem. 
+
+One longstanding issue with digital tools in DSA (and frankly many other orgs) is adoption. In DSA, democracy is our first priority. Even if an app was perfect and we had perfectly behaved users, if they made up only 5% of our total membership, the app will have totally failed. Any new software project in DSA needs to have wide buy-in but chat might be the toughest tool to do this with because it will touch everyone in the org. I'm not sure this would be a good idea for us to even attempt until we have SSO.
+
+Even if perfect chat software was delivered to us by a higher power, and the entire org unanimously decided we should use it, we would still have some serious challenges. As of Feb. 2025, DSA's national office is understaffed, particularly in the tech department, and we are in a slow-moving budget crisis. Setting up national infrastructure requires national dollars and (correctly!) national oversight. Members leave, or simply disengage with, DSA all the time. Everybody gets busy with life, things happen. The risk of the one person with capacity and skills to help leaving is a serious risk for any tech project in DSA. Staff members need to have the time and skills to ensure the app stays up, or pay someone to do that for us. Both options are expensive and we don't have the money. We have a significant amount of existing software services / processes / technical debt that will likely suck up any new capacity we do get when a Data & Tech manager is hired. 
