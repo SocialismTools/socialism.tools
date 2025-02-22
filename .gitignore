@@ -10,3 +10,6 @@ source/content/.obsidian/plugins
 source/content/.obsidian/community-plugins.json
 source/content/.obsidian/app.json
 source/content/.obsidian/core-plugins.json
+source/content/.obsidian/core-plugins-migration.json
+source/content/.obsidian/appearance.json
+source/content/.obsidian/workspace.json
