@@ -6,3 +6,7 @@ source/public
 *.mjs
 *.mjs.map
 source/package-lock.json
+source/content/.obsidian/plugins
+source/content/.obsidian/community-plugins.json
+source/content/.obsidian/app.json
+source/content/.obsidian/core-plugins.json
