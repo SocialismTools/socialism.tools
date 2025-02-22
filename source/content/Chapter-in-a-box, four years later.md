@@ -1,4 +1,11 @@
+---
+title: Chapter-in-a-box, four years later
+publish: true
+tags:
+---
 ## or: what you need to know before deploying open-source software to your chapter
+
+*originally published in 2023, lightly edited from original version*
 
 Energized by the Bernie campaign, I joined the National Tech Committee in August 2019. While writing this post, I found a document from June 2020 where I had some of the first recorded thoughts on what a Chapter-in-a-box (CIAB) project would look like.
 
@@ -18,7 +25,7 @@ From Rafael romero on [Unsplash](https://unsplash.com/@rafa_gold)
 
 ## why CIAB is a bad idea
 
-The full realization of the CIAB dream – one secure, managed, FOSS platform covering multiple apps like file hosting, chat, content creation, and so on – is simply not possible given the current software ecosystem, and even if it was, it would still a terrible idea to have every chapter own their own tech stack. There is simply not enough available tech labor on the left to make this work – it has to be centralized.
+The full realization of the CIAB dream – one secure, managed, FOSS platform covering multiple apps like file hosting, chat, content creation, and so on – is simply not possible given the current software ecosystem, and even if it was, it would still a terrible idea to have every chapter own their own tech stack. There is simply not enough available tech labor on the left to make this work – it has to be centralized, and even that would be very difficult.
 
 Let’s break down “why CIAB is a bad idea” into a few categories.
 
@@ -50,11 +57,11 @@ It’s not the developer’s fault, though. Apple, Adobe, Google and Microsoft h
 
 ### …and there’s not many of them to choose from
 
-For most categories of app, there are one or two major FOSS competitors if you’re lucky. For document collaboration, there are basically two major players, and both are unsuitable for use in DSA. Groupware – email, calendar, contacts services – and document collaboration are some of the two most important pieces of software any entity runs. They are also ground zero for where the CIAB dream goes to die.
+For most categories of app, there are one or two major FOSS competitors if you’re lucky. For document collaboration, there are basically two major players, and both are unsuitable for use in DSA. Groupware – email, calendar, contacts services – and document collaboration are some of the two most important pieces of software any entity runs. They are also where the CIAB dream goes to die.
 
 #### dashed upon the rocks of docs
 
-Let’s first look at the most popular FOSS office software, LibreOffice, assume you installed it alongside Nextcloud and LibreOffice Online, and that someone is paying an experienced admin to babysit it. Right at the start, this is three pieces of software, from separate companies, to match a fraction of the function of Office 365 or Google Workspace.
+Let’s first look at the most popular FOSS office software, LibreOffice, assume you installed it alongside Nextcloud and LibreOffice Online, and that someone is paying an experienced admin to babysit it. Right at the start, this is three pieces of software, from separate companies, to match a tiny fraction of the function of Office 365 or Google Workspace.
 
 LibreOffice is woefully inadequate for how the modern Left utilizes document and collaboration software. According to contributors, the codebase is [not in good shape](https://www.theregister.com/2020/07/16/libreoffice_ecosystem_beyond_utterly_broken/) and this is not surprising to almost anyone who has attempted to use LibreOffice. Here’s the main reasons why LibreOffice is a non-starter:
 
@@ -66,24 +73,20 @@ LibreOffice is woefully inadequate for how the modern Left utilizes document and
 
 The other main alternative in the office collaboration space is [Cryptpad](https://cryptpad.org/), which has all the above issues except one – CryptPad it cloud-native and end-to-end encrypted! It’s under active development, and while I wouldn’t use it now, I’m more optimistic it will be a viable player soon. CryptPad is getting funding from some EU grants, so they have a solid financial base to work from, and the cloud-first end-to-end encryption model is compelling and unique. Time will tell if they can pull it off – if they do, they’ll have LibreOffice to thank.
 
-
-As many large enterprises learned the hard way, identity and access management is tough, and having a single sign-on (SSO) solution is critical to keep users and admins sane.
-
-So you’re concerned about the surveillance state
-
-### almost nobody cares about foss except nerds
+*on re-reading this, the above might sound mean to LibreOffice - I didn't intend this to rip them to shreds, it's not their fault they don't have a near-monopoly to pay their developers with. This is unfortunately the nature of open source*
+### almost nobody cares about FOSS
 
 Let’s start off with something obvious: many FOSS advocates support FOSS because of the ideology – it’s not just about the software experience FOSS apps provide.
 
-Normal people, who do not know or care about how software is made, **do not care about FOSS**. Most people don’t know what FOSS means or are only vaguely aware of it. Basically every device or software product people choose in their everyday life is not FOSS. This is not a coincidence – people want stuff that is easy, available, and does what they want.
+Normal people (who do not know or care about how software is made) **do not care about FOSS**. Most people don’t know what FOSS means or are only vaguely aware of it. Basically every device or software product people choose in their everyday life is not FOSS. This is not a coincidence – people want stuff that is easy, available, and does what they want.
 
-It is true that many people care about their privacy. There are three big problems with turning this feeling into action. The first is that many people _say_ they care about their privacy but value a long list of things above their privacy (environmentalists are very familiar with this kind of pain). The second is that normal people aren’t tech experts and don’t even know how (and how often) their privacy is being violated in the first place. The third is that even if they learn, most fixes are astoundingly difficult to implement, which can just make people feel helpless.
+It is true that many people care about their privacy. There are three big problems with turning this feeling into action. The first is that many people _say_ they care about their privacy but value a long list of things above their privacy (environmentalists are very familiar with this kind of pain). The second is that normal people aren’t tech experts and don’t even know how (and how often) their privacy is being violated in the first place. The third is that even if they learn, most fixes are difficult to implement, which can make people feel helpless.
 
 *Just how hard is it to protect your privacy? [This blog post](https://www.optoutproject.net/data-free-disney/) about a privacy-conscious mom who wanted to go to Disneyland with her family but not submit her family to tracking is a spectacular example of how pervasive tracking technologies have become, how little the average person even notices them, and how difficult it is to avoid tracking even for committed techies. Leftists should understand that the fix to systemic problems will not be addressed by individual consumer choice.*
 
 To be clear, I’m not saying you should throw your privacy to the wind and give Sam Altman your eyeball scans or whatever. But we need to work with what we’ve got. Skills like enabling 2FA and ad-blockers, skills for spotting scams, and using a password manager are all far more likely to have a positive impact in the average person’s life than complicated cybersecurity tactics designed only to foil a potential FBI investigation.
 
-The same goes for collaboration software. It’s an extremely tough sell to convince comrades to use a costlier, clunkier product that needs far more attention and money to maintain properly. The basics of Google Drive are (and will almost certainly remain) free indefinitely. Do we want organizers and comrades spending tons of time managing, learning, and otherwise spending time on software, or do we want them out in the real world? In an ideal world, we can have both, but we aren’t there yet.
+The same goes for collaboration software. It’s an extremely tough sell to convince comrades to use a costlier, clunkier product that needs far more attention and money to maintain properly. The basics of Google Drive are (and will almost certainly remain) free indefinitely. **Do we want organizers spending tons of time managing, learning, and otherwise spending time on software, or do we want them doing something more productive?** In an ideal world, we can do both, but we aren’t there yet.
 
 ![](https://socialism.tools/wp-content/uploads/image-2.png)
 
@@ -101,9 +104,9 @@ What these tools have in common is that they are in use widely already thanks to
 
 ## socialism dot social
 
-It has been really, profoundly positive for me to work with so many different comrades across the country. Working together is rarely easy. There are political fights, bureaucratic roadblocks, resource constraints, and so on.
+It has been really, profoundly positive for me to work with so many different comrades across the country. Working together is rarely easy. There are political debates, bureaucratic roadblocks, resource constraints, and so on. But what political organization in history hasn't had these?
 
-But sometimes you get a win and it feels great to have made a difference. We now have working groups using a new, more powerful and easier-to-use WordPress platform, chapter websites are getting dozens of chapters a rock-solid web presence, we launched Open Slides to very positive reviews, we have a [new newsfeed](https://feed.dsausa.org/), and there’s work being done to engage chapter leaders more on tech issues via the new tech liaison program. The NTC has had plenty of headwinds, but we’re still growing and getting stronger every day.
+And sometimes you get a win and it feels great to have made a difference. We now have working groups using a new, more powerful and easier-to-use WordPress platform, chapter websites are getting dozens of chapters a rock-solid web presence, we launched Open Slides to very positive reviews, we have a [new newsfeed](https://feed.dsausa.org/), and there’s work being done to engage chapter leaders more on tech issues via the new tech liaison program. The NTC has had plenty of headwinds, but we’re still growing and getting stronger every day.
 
 As for CIAB, the dream lives on, albeit in a dozen pieces. Maybe one day DSA will be big enough to put them together. Until then, the work continues – one piece at a time. If you want to help put the pieces together, [join the NTC](https://actionnetwork.org/forms/dsantc-signup/) and help us build the tools to power democratic socialism in our time.
 
@@ -113,11 +116,13 @@ _If you’re a DSA member, continue signing up for [monthly dues](https://act.d
 
 *The FOSS login nightmare*
 
-Every major business in the world has switched to Single sign-on (SSO) a broad set of technologies that means users only need to remember a single password for all their apps. SSO solutions like Okta also include robust 2-factor authentication solutions to keep accounts secure.
+Every major business in the world has switched to Single sign-on (SSO), a broad set of complicated technologies that means users only need to remember a **single** password to **sign on** to all their apps. SSO solutions like Okta also include robust 2-factor authentication solutions to keep accounts secure.
 
-While Cloudron has very broad app support, not all apps support Cloudron’s LDAP login. LDAP doesn’t support 2FA, which is a massive security issue. Admins would also need to manually manage users in the several apps that don’t support LDAP, which can be confusing and time-consuming for both admins and users.
+While Cloudron has very broad app support, not all apps support Cloudron’s LDAP login. LDAP doesn’t natively support 2FA, which is a massive security issue. Cloudron added TOTP-based 2FA to their LDAP solution but only some apps support it. Admins would also need to manually manage users in the several apps that don’t support LDAP, which can be confusing and time-consuming for both admins and users.
 
 Outside Cloudron, only a handful of individual FOSS apps support SSO. Many FOSS apps have a hybrid licensing model and lock SSO behind an enterprise license – assuming it’s available at all.
+
+As many large enterprises learned the hard way, identity and access management is tough, and having a single sign-on (SSO) solution is critical to keep users and admins sane.
 
 *So you're concerned about the surveillance state*
 
@@ -125,4 +130,4 @@ One major point of pushback you’ll get from techies when recommending that peo
 
 **But** all the alternatives to Docs don’t stop the state from sending you a letter demanding your data or breaking down your door to get it or tossing you in a cage. If you get to the point where the FBI is after you, _you are in very deep shit_ and I’m not convinced your choice of collaboration software will be the make-or-break change in your life. If you intend to do any cool, fun crimes, _do not ever talk about them on the computer._
 
-Also, think about what is more likely: you become Edward Snowden 2, or you misconfigure a setting on your self-hosted document cloud setup and get hit with ransomware or something. From the smallest companies to the biggest megacorps, everyone is always getting bit with infosec issues because it’s very, very easy to fuck up.
+Also, think about what is more likely: you become Edward Snowden 2, or you misconfigure a setting on your self-hosted document cloud setup and get hit with ransomware or something. From the smallest companies to the biggest mega corps, everyone is always getting bit with infosec issues because it’s very, very easy to fuck up.
