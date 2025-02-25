@@ -4,6 +4,7 @@
 source/node_modules
 source/public
 source/quartz/.quartz-cache
+source/quartz/bo
 source/package-lock.json
 source/content/.obsidian/plugins
 source/content/.obsidian/community-plugins.json
@@ -12,3 +13,4 @@ source/content/.obsidian/core-plugins.json
 source/content/.obsidian/core-plugins-migration.json
 source/content/.obsidian/appearance.json
 source/content/.obsidian/workspace.json
+source/quartz/bootstrap-cli.mjs
