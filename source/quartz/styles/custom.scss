@@ -1,6 +1,70 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
 
-// put your custom CSS here!
-body {
-    font-size: 18px;
+.page {
+  .sidebar {
+    &.right {
+      & > .toc > button > svg.fold {
+        //targets the svg element in the table of contents button
+        stroke-width: 0; // hides the arrow.
+      }
+    }
+    &.left {
+      & > .explorer > button > svg.fold {
+        //target the explorer svg
+        stroke-width: 0;
+      }
+      //target the explorer list and li
+      & > .explorer #explorer-ul li {
+        font-family: var(--headerFont); //preserve header font
+      }
+      .tree-item-contents > svg.fold {
+        display: none;
+      }
+      & > .explorer > h2 {
+        font-family: var(--headerFont);
+      }
+    }
+  }
+  // Ensure the right sidebar can grow
+  & > #quartz-body {
+    .sidebar.right {
+      @media all and ($desktop) {
+        & > .toc {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          & > #toc-content {
+            flex-grow: 1; //makes it fill the available space
+            overflow-y: auto; // Allow scrolling within the toc content when needed
+          }
+        }
+      }
+    }
+  }
+  // TOC style
+  .toc.desktop-only {
+    max-height: unset;
+    font-family: var(--headerFont);
+    // Override max-height from base.scss
+    div:has(> .overflow) {
+      max-height: unset;
+    }
+    & > #toc-content {
+      &[aria-expanded="true"] {
+        // Selects the #toc-content when it is expanded
+        height: 100%; // Ensures the #toc-content fills its container when expanded
+        overflow-y: auto; // Allow scrolling within the toc content when needed
+      }
+
+      & > ul.overflow {
+        max-height: unset; // Remove the max-height to allow expanding
+        overflow-y: auto; // Allow scrolling within the list when needed
+        padding-bottom: 2rem; // Add padding at the bottom
+        li {
+          font-size: 0.9em; // make the font smaller
+        }
+      }
+    }
+  }
 }

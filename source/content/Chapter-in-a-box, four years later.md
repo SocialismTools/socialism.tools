@@ -19,7 +19,7 @@ This would differ from the current tech strategy of most DSA chapters, which is 
 
 Over the following years I’ve tested many different FOSS tools (along with other comrades like [Aslan](https://discussion.dsausa.org/t/chapter-in-a-box-project-megathread/18384)), talked to at least a dozen people about how they use FOSS in their chapters, ran the WordPress project at the NTC and served on the SC for ~two years. I know there’s a lot of energy among the techie left out there, and I want to help share what I’ve learned, so others can learn from my successes and avoid repeating my mistakes.
 
-![](https://socialism.tools/wp-content/uploads/image-3-814x1024.png)
+![](https://socialism.tools/wp-content/uploads/image-3-814x1024.png|100)
 
 From Rafael romero on [Unsplash](https://unsplash.com/@rafa_gold)
 
@@ -51,9 +51,9 @@ Photo by [Rodion Kutsaiev](https://unsplash.com/@frostroomhead?utm_content=cred
 
 ### the free puppies are ugly…
 
-Let’s be honest for a moment: free software designed for end-users is substantially worse than their paid counterparts. Even in cases where the free version is more popular (see Adobe suite alternatives) it’s not _better_. Every time an alternative to these apps is mentioned, even when someone uses it every day or for their work, they will admit it’s simply not as good (with very few exceptions).
+Let’s be honest for a moment: free software designed for end-users is substantially worse than their paid counterparts. Even in cases where the free version is more popular it’s (usually) not _better_. Every time an alternative to these apps is mentioned, even when someone uses it every day or for their work, they will admit it’s simply not as good.
 
-It’s not the developer’s fault, though. Apple, Adobe, Google and Microsoft have billions of dollars to hire world-class engineers and designers. They spend millions of dollars a year on user research and refinement. FOSS apps simply cannot compete with this.
+It’s not the developer’s fault, though. Apple, Adobe, Google and Microsoft have billions of dollars to hire world-class engineers and designers. They spend millions of dollars a year on user research. FOSS apps simply cannot compete with this.
 
 ### …and there’s not many of them to choose from
 
@@ -63,17 +63,17 @@ For most categories of app, there are one or two major FOSS competitors if you�
 
 Let’s first look at the most popular FOSS office software, LibreOffice, assume you installed it alongside Nextcloud and LibreOffice Online, and that someone is paying an experienced admin to babysit it. Right at the start, this is three pieces of software, from separate companies, to match a tiny fraction of the function of Office 365 or Google Workspace.
 
-LibreOffice is woefully inadequate for how the modern Left utilizes document and collaboration software. According to contributors, the codebase is [not in good shape](https://www.theregister.com/2020/07/16/libreoffice_ecosystem_beyond_utterly_broken/) and this is not surprising to almost anyone who has attempted to use LibreOffice. Here’s the main reasons why LibreOffice is a non-starter:
+LibreOffice is woefully inadequate for how the modern left utilizes document and collaboration software. According to contributors, the codebase is [not in good shape](https://www.theregister.com/2020/07/16/libreoffice_ecosystem_beyond_utterly_broken/) and this is not surprising to almost anyone who has attempted to use LibreOffice. Here’s the main reasons why LibreOffice is a non-starter:
 
-- **Local-first editing has been out of style for a decade for a reason**. Collaboration is critical to every DSA workflow I’ve seen, and cloud-based editing (Google Docs) makes it so much easier. It helps prevent people from losing documents if their computer crashes and they forgot to save, it makes sharing as easy as sending a link or plopping a doc into a folder, multiple people can be in a doc at the same time, and when your editor is online-first sync conflcits are extremely rare.
-- **LibreOffice is still local-first**, the web version is developed by a third party, Collabora, with [licensing restrictions](https://www.collaboraoffice.com/subscriptions/) that would technically require DSA to pay for it around $22/user/year (the average DSA member pays $27 in annual dues). Even if we somehow got LibreOffice Online for free, the issues don’t stop.
+- **Local-first editing has been out of style for a decade for a reason**. Collaboration is critical to every DSA workflow I’ve seen, and cloud-based editing (Google Docs) makes it so much easier. It helps prevent people from losing documents if their computer crashes and they forgot to save, it makes sharing as easy as sending a link or plopping a doc into a folder, multiple people can be in a doc at the same time, and when your editor is online-first sync conflicts are extremely rare.
+- **LibreOffice is still local-first**, the web version is developed by a third party, Collabora, with [licensing restrictions](https://www.collaboraoffice.com/subscriptions/) that would technically require DSA to pay for it around $22 per user per year (the average DSA member pays $27 in annual dues). Even if we somehow got LibreOffice Online for free, the issues don’t stop.
 - **LibreOffice is ugly and difficult to use.** I get pushback on this point from people in the FOSS community, but it’s true. Look at how cluttered LibreOffice is compared to Office or Docs right when you open a file. Compare the features to Office and the ease of use to Docs. If you don’t think it’s ugly or difficult to use for your needs, that’s fine – but that is a minority opinion.
-- **Mobile is an afterthought.** The Document Foundation doesn’t have mobile apps for LibreOffice, but Collabora has one. It’s not good. Now add the mess of software required to sync documents to mobile into the mix. I haven’t seen anything that suggests The Document Foundation has any plans to change this.
+- **Mobile is an afterthought.** The Document Foundation doesn’t have mobile apps for LibreOffice, but Collabora has one. It’s very bad. I haven’t seen anything that suggests The Document Foundation has any plans to change this.
 - **It’s buggy.** LibreOffice desktop apps, Collabora Online, the mobile apps, the _website_ _itself_ are buggy. No software is perfect, but LibreOffice is noticeably bad in this regard.
 
-The other main alternative in the office collaboration space is [Cryptpad](https://cryptpad.org/), which has all the above issues except one – CryptPad it cloud-native and end-to-end encrypted! It’s under active development, and while I wouldn’t use it now, I’m more optimistic it will be a viable player soon. CryptPad is getting funding from some EU grants, so they have a solid financial base to work from, and the cloud-first end-to-end encryption model is compelling and unique. Time will tell if they can pull it off – if they do, they’ll have LibreOffice to thank.
-
 *on re-reading this, the above might sound mean to LibreOffice - I didn't intend this to rip them to shreds, it's not their fault they don't have a near-monopoly to pay their developers with. This is unfortunately the nature of open source*
+
+The other main alternative in the office collaboration space is [Cryptpad](https://cryptpad.org/), which has all the above issues except one – CryptPad is cloud-native and end-to-end encrypted! CryptPad is getting funding from some EU grants, so they have a solid financial base to work from, and the cloud-first end-to-end encryption model is compelling and unique. Time will tell if they can pull it off – if they do, they’ll have LibreOffice to thank.
 ### almost nobody cares about FOSS
 
 Let’s start off with something obvious: many FOSS advocates support FOSS because of the ideology – it’s not just about the software experience FOSS apps provide.
@@ -111,6 +111,8 @@ And sometimes you get a win and it feels great to have made a difference. We now
 As for CIAB, the dream lives on, albeit in a dozen pieces. Maybe one day DSA will be big enough to put them together. Until then, the work continues – one piece at a time. If you want to help put the pieces together, [join the NTC](https://actionnetwork.org/forms/dsantc-signup/) and help us build the tools to power democratic socialism in our time.
 
 _If you’re a DSA member, continue signing up for [monthly dues](https://act.dsausa.org/donate/membership/). If you’re not a member yet, consider [joining](https://act.dsausa.org/donate/membership/)_ _the largest socialist organization in the US to fight for Medicare for All, a Green New Deal, and more._
+
+---
 
 **Bonus problems**
 

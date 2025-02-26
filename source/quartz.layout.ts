@@ -23,6 +23,18 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer({
+      title: "Content",
+      mapFn: (node) => {
+        // dont change name of root node
+        if (node.depth > 0) {
+          // set emoji for file/folder
+          if (node.file) {
+            node.displayName = "📄 " + node.displayName
+          } else {
+            node.displayName = "📁 " + node.displayName
+          }
+        }
+      },
       filterFn: (node) => {
         // set containing names of everything you want to filter out
         const omit = new Set(["tags", "glossary"])
