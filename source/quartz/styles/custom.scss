@@ -1,7 +1,48 @@
 @use "./base.scss";
 @use "./variables.scss" as *;
 
+#quartz-body {
+    max-width: 1100px;
+}
+
 .page {
+  & > #quartz-body {
+    justify-items: start; // Left-justify all grid items
+
+    @media all and ($desktop) {
+      // Make the right column grow instead of being fixed
+      grid-template-columns: 250px 1fr auto; // Change the right column to auto
+      
+      .sidebar.right {
+        grid-area: grid-sidebar-left; //put the right sidebar (TOC) on the left
+        width: auto; //unset the width
+        flex-direction: column; // Revert flex-direction to column
+        flex: unset; //remove the flex: 1 that forces the toc to expand.
+      }
+
+      .sidebar.left {
+        grid-area: grid-sidebar-right; //put the left sidebar (explorer) on the right.
+      }
+      .center {
+        grid-area: grid-center; //put the center content in the middle.
+      }
+    }
+
+    .center {
+      max-width: 500px;
+      min-width: unset;
+      margin-left: 0; //reset the left margin, since it is no longer needed.
+      margin-right: 0; //reset the right margin, since it is no longer needed.
+    }
+
+    .sidebar {
+      &.right {
+        align-items: start; //align the toc to the left
+      }
+    }
+  }
+
+  // Ensure the sidebar can grow
   .sidebar {
     &.right {
       & > .toc > button > svg.fold {
