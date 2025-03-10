@@ -38,7 +38,7 @@ Being fully FOSS, Matrix actually many different pieces of software - you need t
 ### Everything else
 Rocket Chat and Mattermost are often cited in these discussions but both lock too many features behind a paywall. Consumer-oriented apps like Signal aren't built for the needs of large groups. The one consumer app built for large group chats - Discord.  
 
-Discord is very popular, especially with younger people and gamers. Some chapters have a Discord already set up, and Discord does have the ability to create "private" servers. However, Discord is an app for public gaming communities and would be a pretty poor fit for DSA on features alone (No SSO, few productivity integrations, terrible search). The fact that it's owned by Microsoft (zero privacy) and undergoing increasingly aggressive monetization should rule it out for long-term use. That said - until we choose one app to use and get people to use it, Discord is simple, free and popular - it's hard to beat that.
+Discord is very popular, especially with younger people and gamers. Some chapters have a Discord already set up, and Discord does have the ability to create "private" servers. However, Discord is an app for public gaming communities and would be a pretty poor fit for DSA on features alone (No SSO, few productivity integrations, terrible search). Discord is still privately held and is undergoing increasingly aggressive monetization which should rule it out for long-term use. That said - until we choose one app to use and get people to use it, Discord is simple, free and popular - it's hard to beat that.
 
 ## All of the non-tech parts
 
