@@ -22,7 +22,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer({
+    Component.Explorer({
       title: "Content",
       mapFn: (node) => {
         // dont change name of root node
@@ -40,7 +40,7 @@ export const defaultContentPageLayout: PageLayout = {
         const omit = new Set(["tags", "glossary"])
         return !omit.has(node.name.toLowerCase())
       },
-    })),
+    }),
   ],
   right: [
     //Component.Graph(),
@@ -57,13 +57,13 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer({
+    Component.Explorer({
       filterFn: (node) => {
         // set containing names of everything you want to filter out
         const omit = new Set(["tags", "glossary"])
         return !omit.has(node.name.toLowerCase())
       },
-    })),
+    }),
   ],
   right: [],
 }
